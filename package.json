@@ -1,0 +1,18 @@
+{
+  "name": "timer-app",
+  "version": "1.0.0",
+  "description": "Timer application for GameCenter.kz",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Margulan Tukhfatov <tukhfatov.margulan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^0.4.1",
+    "jquery": "^2.1.4",
+    "moment": "^2.10.6",
+    "nedb": "^1.4.0",
+    "requirejs": "^2.1.22"
+  }
+}

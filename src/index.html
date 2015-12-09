@@ -1,0 +1,198 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Gamecenter.kz</title>
+
+	<!-- CSS files -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- JS files -->
+	<script>window.$ = window.jQuery = require('./js/dist/jquery-1.11.3.min.js');</script>
+	<script type="text/javascript" src="js/dist/moment.min.js"></script>
+	<script type="text/javascript" src="js/dist/transition.js"></script>
+	<script type="text/javascript" src="js/dist/collapse.js"></script>
+	<script type="text/javascript" src="js/dist/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/dist/bootstrap-datetimepicker.min.js"></script>
+
+</head>
+<body>
+
+<div>
+&nbsp;
+</div>
+
+<div class="container">
+	<div class="row text-center">
+		<div class="col-xs-6 col-md-4">
+			<div class="jumbotron">
+				<h1 id="timertable1">
+					00:00:00
+				</h1>
+				<p>VIP 1</p>
+				<div class="timePanel">
+					<div class="list-group" id="list1">
+					</div>
+				</div>
+				<div class="">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addTimeModal" data-hall="VIP 1" data-hallId="1">Добавить</button>
+					<button class="btn btn-danger" disabled="disabled">Удалить</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-4">
+			<div class="jumbotron">
+				<h1 id="timertable2">
+					00:00:00
+				</h1>
+				<p>VIP 2</p>
+				<div class="timePanel">
+					<div class="list-group" id="list2">
+					</div>
+				</div>
+				<div class="">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addTimeModal" data-hall="VIP 2" data-hallId="2">Добавить</button>
+					<button class="btn btn-danger" disabled="disabled">Удалить</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-4">
+			<div class="jumbotron">
+				<h1 id="timertable3">
+					00:00:00
+				</h1>
+				<p>VIP 3</p>
+				<div class="timePanel">
+					<div class="list-group" id="list3">
+					</div>
+				</div>
+				<div class="">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addTimeModal" data-hall="VIP 3" data-hallId="3">Добавить</button>
+					<button class="btn btn-danger" disabled="disabled">Удалить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-xs-6 col-sm-3">
+			<div class="jumbotron">
+				<h2 id="timertable4">
+					00:00:00
+				</h2>
+				<p>Общий зал 1</p>
+				<div class="timePanel">
+					<div class="list-group" id="list4">
+					</div>
+				</div>
+				<div class="">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addTimeModal" data-hall="Общий зал 1" data-hallId="4">Добавить</button>
+					<button class="btn btn-danger" disabled="disabled">Удалить</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-3">
+			<div class="jumbotron">
+				<h2 id="timertable5">
+					00:00:00
+				</h2>
+				<p>Общий зал 2</p>
+				<div class="timePanel">
+					<div class="list-group" id="list5">
+					</div>
+				</div>
+				<div class="">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addTimeModal" data-hall="Общий зал 2" data-hallId="5">Добавить</button>
+					<button class="btn btn-danger" disabled="disabled">Удалить</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add the extra clearfix for only the required viewport -->
+		<div class="clearfix visible-xs-block"></div>
+
+		<div class="col-xs-6 col-sm-3">
+			<div class="jumbotron">
+				<h2 id="timertable6">
+					00:00:00
+				</h2>
+				<p>Общий зал 3</p>
+				<div class="timePanel">
+					<div class="list-group" id="list6">
+					</div>
+				</div>
+				<div class="">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addTimeModal" data-hall="Общий зал 3" data-hallId="6">Добавить</button>
+					<button class="btn btn-danger" disabled="disabled">Удалить</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6 col-sm-3">
+			<div class="jumbotron">
+				<h2 id="timertable7">
+					00:00:00
+				</h2>
+				<p>Общий зал 4</p>
+				<div class="timePanel">
+					<div class="list-group" id="list7">
+					</div>
+				</div>
+				<div class="">
+					<button class="btn btn-primary" data-toggle="modal" data-target="#addTimeModal" data-hall="Общий зал 4" data-hallId="7">Добавить</button>
+					<button class="btn btn-danger" disabled="disabled">Удалить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="addTimeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Добавить время</h4>
+      </div>
+		<input type="hidden" id="hallId" >
+      <div class="modal-body">
+			 <div class="form-group">
+			    <label for="hallName">Зал</label>
+			    <input type="text" readonly class="form-control" id="hallName" placeholder="Зал">
+			 </div>
+
+			<div class="form-group">
+				<label for="exampleInputFile">С</label>
+                <div class='input-group date' id='startTime'>
+                    <input type='text' class="form-control" id="startTimeValue" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+			<div class="form-group">
+				<label for="exampleInputFile">До</label>
+                <div class='input-group date' id='endTime'>
+                    <input type='text' class="form-control"  id="endTimeValue"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary" id="addBtn">Добавить</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/app/core.js"></script>
+
+</body>
+</html>
