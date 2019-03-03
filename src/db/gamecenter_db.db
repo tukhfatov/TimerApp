@@ -16,3 +16,6 @@
 {"hall":"VIP 1","hallId":"1","start":"13:13","end":"13:18","addedAt":{"$$date":1448784788283},"_id":"jbEJv8Emem7X37y6"}
 {"hall":"VIP 1","hallId":"1","start":"17:54","end":"17:59","addedAt":{"$$date":1449406487049},"_id":"lJkxkidOJdx3719k"}
 {"hall":"VIP 2","hallId":"2","start":"03:41","end":"03:46","addedAt":{"$$date":1448750520622},"_id":"w5oLL7DHS17xVR6D"}
+{"hall":"VIP 1","hallId":"1","start":"18:13","end":"18:17","addedAt":{"$$date":1450185146846},"_id":"oT2OSirHlI7EfgGt"}
+{"hall":"Общий зал 3","hallId":"6","start":"18:14","end":"18:17","addedAt":{"$$date":1450185164065},"_id":"x5A2RfVrqApkqtbO"}
+{"hall":"VIP 2","hallId":"2","start":"20:30","end":"18:17","addedAt":{"$$date":1450185288343},"_id":"Uwvxlh390nfNuCZU"}
